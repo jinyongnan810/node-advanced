@@ -25,8 +25,8 @@ while (shouldContinue()) {
   // A tick
   // 1.Do what is needed to be done.
   //  If any pending timers, execute the callbacks(setInterval,setTimeout)
-  //  If any pending OS tasks, execute the tasks
-  //  If any long running operations. execute the operations
+  //  If any pending OS tasks, execute the tasks (related:async.js)
+  //  If any long running operations. execute the operations (related:thread.js)
   // 2.Pause until
   //  OStasks done,LongOperation done, or timer complete
   // 3.If any pending timers, execute the callbacks(setImmediate)
