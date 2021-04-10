@@ -17,7 +17,7 @@ const crypto = require("crypto");
 //   console.log("5:", Date.now() - start1);
 // });
 
-// change thread pool size, but the result is not very comprehensible
+// ***change thread pool size, but the result is not very comprehensible***
 process.env.UV_THREADPOOL_SIZE = 6;
 const start2 = Date.now();
 crypto.pbkdf2("a", "b", 100000, 512, "SHA512", () => {
